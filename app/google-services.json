@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "189518414803",
+    "firebase_url": "https://hobbyist-c0637.firebaseio.com",
+    "project_id": "hobbyist-c0637",
+    "storage_bucket": "hobbyist-c0637.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189518414803:android:00c9fe74640627bf",
+        "android_client_info": {
+          "package_name": "com.project.android.hobbyist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189518414803-irvgkfjotsn1na32ifv0jk7mpr9ffvbb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.android.hobbyist",
+            "certificate_hash": "a2647821a760047d0cf3c1a5f68588b82683aecd"
+          }
+        },
+        {
+          "client_id": "189518414803-891bm524pj0c9hi9f0amqv679na8j72p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDph8sz41QCoPGvGE1Aw1HU-x_aAm9cBfQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189518414803-891bm524pj0c9hi9f0amqv679na8j72p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

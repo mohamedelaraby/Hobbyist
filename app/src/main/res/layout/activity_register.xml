@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.project.android.hobbyist.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_account_circle_24px"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="@color/colorPrimary" />
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/text_field_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            app:endIcon="@drawable/ic_person_black_24dp"
+            app:helperText="@string/required"
+            app:isResponsiveIconColor="true"
+            app:labelText="@string/full_name"
+            app:panelBackgroundColor="@color/colorPer200White"
+            app:primaryColor="@color/colorBlue"
+            app:secondaryColor="@color/colorPrimary"
+            app:useDenseSpacing="true">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/full_name_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/text_field_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_field_1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            app:endIcon="@drawable/ic_email_black_24dp"
+            app:helperText="@string/required"
+            app:isResponsiveIconColor="true"
+            app:labelText="@string/email"
+            app:panelBackgroundColor="@color/colorPer200White"
+            app:primaryColor="@color/colorBlue"
+            app:secondaryColor="@color/colorPrimary"
+            app:useDenseSpacing="true">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/email_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                app:prefix="\@gmail.com" />
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/text_field_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_field_2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            app:endIcon="@drawable/ic_phone_black_24dp"
+            app:isResponsiveIconColor="true"
+            app:labelText="@string/phone_number"
+            app:panelBackgroundColor="@color/colorPer200White"
+            app:primaryColor="@color/colorBlue"
+            app:secondaryColor="@color/colorPrimary"
+            app:useDenseSpacing="true">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/phone_number_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPhonetic" />
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/text_field_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_field_3"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            app:endIcon="@drawable/ic_lock_black_24dp"
+            app:helperText="@string/required"
+            app:isResponsiveIconColor="true"
+            app:labelText="@string/password"
+            app:panelBackgroundColor="@color/colorPer200White"
+            app:primaryColor="@color/colorBlue"
+            app:secondaryColor="@color/colorPrimary"
+            app:useDenseSpacing="true">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/password_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPhonetic" />
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/text_field_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_field_4"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            app:endIcon="@drawable/ic_lock_black_24dp"
+            app:helperText="@string/required"
+            app:isResponsiveIconColor="true"
+            app:labelText="@string/repeat_password"
+            app:panelBackgroundColor="@color/colorPer200White"
+            app:primaryColor="@color/colorBlue"
+            app:secondaryColor="@color/colorPrimary"
+            app:useDenseSpacing="true">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/repeat_password_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPhonetic" />
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <TextView
+            android:id="@+id/date_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_field_5"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_date_range_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity=""
+            android:hint="@string/date_of_birth" />
+
+        <LinearLayout
+            android:id="@+id/hor_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_of_birth"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp">
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/day_spinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical"
+                app:ms_arrow_tint="@color/colorPrimary"
+                app:ms_dropdown_height="wrap_content"
+                app:ms_dropdown_max_height="350dp"
+                app:ms_hint="Day" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/month_spinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1.5"
+                app:ms_arrow_tint="@color/colorPrimary"
+                app:ms_dropdown_height="wrap_content"
+                app:ms_dropdown_max_height="350dp" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/year_spinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                app:ms_arrow_tint="@color/colorPrimary"
+                app:ms_dropdown_height="wrap_content"
+                app:ms_dropdown_max_height="350dp"
+                app:ms_hint="Year" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hor_lay"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_wc_black_24dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_wc_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity=""
+            android:hint="@string/gender_text"
+            android:textColor="@color/colorPrimary" />
+
+        <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+            android:id="@+id/gender_toggle_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            custom:activeBgColor="@color/colorPrimary"
+            custom:cornerRadius="5dp"
+            custom:inactiveBgColor="@android:color/white"
+            custom:separatorColor="@color/gray_very_light"
+            custom:textToggleCenter="Female"
+            custom:textToggleLeft="Male"
+            custom:textToggleRight="Other"
+            custom:toggleWidth="104dp" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender_toggle_switch"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_location_on_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity=""
+            android:hint="@string/country" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/country_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/country"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            app:ccpDialog_allowSearch="true"
+            app:ccpDialog_fastScroller_bubbleColor="@color/colorBlue"
+            app:ccpDialog_showCloseIcon="true"
+            app:ccpDialog_showFastScroller="true"
+            app:ccp_arrowSize="20dp"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_autoDetectLanguage="true"
+            app:ccp_clickable="true"
+            app:ccp_contentColor="@android:color/black"
+            app:ccp_showArrow="true"
+            app:ccp_showFullName="true"
+            app:ccp_showNameCode="false"
+            app:ccp_showPhoneCode="false"
+            app:ccp_textGravity="LEFT"
+            app:ccp_textSize="20sp" />
+
+        <TextView
+            android:id="@+id/hobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/country_spinner"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_color_lens_black_24dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_color_lens_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity=""
+            android:hint="@string/hobby" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/hobby_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hobby"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            app:ms_arrow_tint="@color/colorPrimary"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="350dp"
+            app:ms_hint="@string/choose_your_hobby" />
+
+        <com.dd.processbutton.FlatButton
+            android:id="@+id/done_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hobby_spinner"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/done"
+            android:textColor="@color/colorText"
+            android:textSize="24sp"
+            app:pb_colorNormal="@color/colorPrimary"
+            app:pb_colorPressed="@color/colorBlue"
+            app:pb_cornerRadius="7dp" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

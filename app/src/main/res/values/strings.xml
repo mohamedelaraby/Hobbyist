@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Hobbyist</string>
+    <string name="string_username">اسم المستخدم</string>
+    <string name="sign_in_btn">Sign in</string>
+    <string name="sign_in_with_text">Sign in with</string>
+    <string name="register_btn">Register</string>
+    <string name="create_account_text">Create new account</string>
+    <string name="full_name">Full name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat - Password</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="today">Today</string>
+    <string name="gender_text">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="month">Month</string>
+    <string name="choose_country">Choose your country</string>
+    <string name="year">Year</string>
+    <string name="day">Day</string>
+    <string name="hobby">Hobby</string>
+    <string name="choose_your_hobby">Choose your hobby</string>
+    <string name="done">Done</string>
+    <string name="required">* Required</string>
+
+    <string-array name="months">
+        <item>Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+
+    <string-array name="hobbies">
+        <item>Video gaming</item>
+        <item>Dance</item>
+        <item>Walking</item>
+        <item>Football</item>
+        <item>Table tennis</item>
+        <item>Tennis</item>
+        <item>Swimming</item>
+        <item>Playstation</item>
+        <item>Social Activities</item>
+        <item>Volunteer works</item>
+        <item>Flag football</item>
+        <item>Archery</item>
+        <item>Base ball</item>
+        <item>BASE Jumping</item>
+        <item>Basketball</item>
+        <item>Water sports</item>
+        <item>Roller skating</item>
+        <item>Skiing</item>
+        <item>Shooting</item>
+        <item>Skydiving</item>
+
+
+    </string-array>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="explore">Explore</string>
+    <string name="messages">Messages</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="sign_in_successfully">Sign in successfully. Have fun!</string>
+    <string name="auth_failed">Auth failed, please try again.</string>
+    <string name="allow_location_permission">Allow Hobbyist to access this device\'s location?</string>
+    <string name="title_location_permission">Location permission</string>
+
+
+</resources>
