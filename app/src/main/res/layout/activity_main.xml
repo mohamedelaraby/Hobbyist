@@ -1,204 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/green_gradiant"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context="com.project.android.hobbyist.MainActivity">
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:contentDescription="@null"
-        android:src="@drawable/logo"
-        android:background="@drawable/background"
-        android:elevation="5dp"
-        android:translationZ="5dp"/>
-
-    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
-        android:id="@+id/text_field_boxes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        app:endIcon="@drawable/ic_person_black_24dp"
-        app:isResponsiveIconColor="true"
-        app:labelText="Email"
-        app:panelBackgroundColor="@color/colorPer200White"
-        app:primaryColor="@android:color/black"
-        app:secondaryColor="@android:color/darker_gray"
-        app:useDenseSpacing="true">
-
-        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
-            android:id="@+id/email_input"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            app:prefix="\@gmail.com" />
-
-    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
-
-    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
-        android:id="@+id/password_text_field_boxes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        app:iconSignifier="@drawable/ic_lock_black_24dp"
-        app:isResponsiveIconColor="true"
-        app:labelText="Password"
-        app:panelBackgroundColor="@color/colorPer200White"
-        app:primaryColor="@android:color/black"
-        app:secondaryColor="@android:color/darker_gray"
-        app:useDenseSpacing="true">
-
-        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
-            android:id="@+id/password_input"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword" />
-
-
-    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
-
-
-    <com.dd.processbutton.FlatButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/sign_in_btn"
-        android:textColor="@color/colorText"
-        android:textSize="24sp"
-        app:pb_colorNormal="@color/colorPrimary"
-        app:pb_colorPressed="@android:color/white"
-
-        app:pb_cornerRadius="7dp" />
+    tools:context="com.project.android.hobbyist.Activities.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="16dp"
-            android:layout_weight="1"
-            android:background="@color/colorPer200White" />
 
-        <TextView
-            android:layout_width="0dp"
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background"
+            android:contentDescription="@null"
+            android:elevation="5dp"
+            android:src="@drawable/logo"
+            android:translationZ="5dp" />
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/text_field_boxes"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="@string/sign_in_with_text"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            app:iconSignifier="@drawable/ic_email_black_24dp"
+            app:isResponsiveIconColor="true"
+            app:labelText="Email"
+            app:panelBackgroundColor="@color/colorPer200White"
+            app:primaryColor="@android:color/black"
+            app:secondaryColor="@color/gray"
+            app:useDenseSpacing="true">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/email_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:id="@+id/password_text_field_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+
+            android:layout_marginTop="16dp"
+            app:iconSignifier="@drawable/ic_lock_black_24dp"
+            app:isResponsiveIconColor="true"
+            app:labelText="Password"
+            app:panelBackgroundColor="@color/colorPer200White"
+            app:primaryColor="@android:color/black"
+            app:secondaryColor="@color/gray"
+            app:useDenseSpacing="true">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/password_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+
+        <Button
+            android:id="@+id/sign_in_btn"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/sign_in_button_back"
+            android:text="@string/sign_in_btn"
             android:textColor="@color/colorText"
-            android:textSize="13sp" />
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationZ="5dp" />
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_weight="1"
-            android:background="@color/colorPer200White" />
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@color/colorPer200White" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/sign_in_with_text"
+                android:textColor="@color/colorText"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@color/colorPer200White" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+
+            <com.shaishavgandhi.loginbuttons.FacebookButton
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/facebook_btn"
+                app:iconSize="30dp" />
+
+            <com.shaishavgandhi.loginbuttons.GoogleButton
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:iconSize="30dp"
+                android:id="@+id/google_btn"/>
+
+            <com.shaishavgandhi.loginbuttons.TwitterButton
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:iconSize="30dp"
+                android:id="@+id/twitter_btn"/>
+
+        </LinearLayout>
 
 
     </LinearLayout>
 
 
-    <LinearLayout
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal">
-
-
-
-        <com.shaishavgandhi.loginbuttons.FacebookButton
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:iconSize="30dp" />
-
-        <com.shaishavgandhi.loginbuttons.GoogleButton
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:iconSize="30dp" />
-
-        <com.shaishavgandhi.loginbuttons.TwitterButton
-            android:layout_width="75dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:iconSize="30dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="16dp"
-            android:layout_weight="0.5"
-            android:background="@color/colorPer200White" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="1.5"
-            android:gravity="center"
-            android:singleLine="true"
-            android:text="@string/create_account_text"
-            android:textColor="@color/colorText"
-            android:textSize="13sp" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="16dp"
-            android:layout_weight="0.5"
-            android:background="@color/colorPer200White" />
-
-
-    </LinearLayout>
-
-
-    <com.dd.processbutton.FlatButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/register_btn"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/reg_back"
         android:onClick="register"
+        android:text="@string/register_btn"
+        android:id="@+id/register"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
-        app:pb_colorNormal="@android:color/white"
-        app:pb_colorPressed="@color/colorBlue"
-        app:pb_cornerRadius="7dp" />
+        android:textStyle="bold" />
 
 
-</LinearLayout>
+</RelativeLayout>

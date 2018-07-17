@@ -77,5 +77,8 @@
     <string name="allow_location_permission">Allow Hobbyist to access this device\'s location?</string>
     <string name="title_location_permission">Location permission</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

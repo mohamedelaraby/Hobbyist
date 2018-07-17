@@ -23,12 +23,16 @@ public class User {
     private double lng;
     private double lat;
 
-    private String userId;
+    private String imageUrl;
+    private String UID;
+
+    private String city;
 
 
     public User(String fullName, String email, String phoneNumber, String password,
                 String dayOfDateBirth, String monthOfDateBirth, String yearOfDateBirth,
-                String gender, String country, String hobby, double lat, double lng) {
+                String gender, String country, String hobby, double lat, double lng, String imageUrl, String UID,
+                String city) {
         this.fullName = fullName;
         this.email = email;
         this.lat = lat;
@@ -41,6 +45,9 @@ public class User {
         this.gender = gender;
         this.country = country;
         this.hobby = hobby;
+        this.imageUrl = imageUrl;
+        this.UID = UID;
+        this.city = city;
     }
 
     public User() {
@@ -141,4 +148,29 @@ public class User {
     public void setLat(double lat) {
         this.lat = lat;
     }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getUID() {
+        return UID;
+    }
+
+    public void setUID(String UID) {
+        this.UID = UID;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
 }
