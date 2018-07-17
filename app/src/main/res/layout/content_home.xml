@@ -5,30 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.project.android.hobbyist.Activities.HomeActivity"
+    tools:context="com.project.android.hobbyist.HomeActivity"
     tools:showIn="@layout/activity_home">
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/frame">
-
-    </FrameLayout>
 
     <com.luseen.spacenavigation.SpaceNavigationView
         android:id="@+id/navigation_space"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="bottom"
-        android:elevation="5dp"
-        android:translationZ="5dp"
-        app:centre_button_color="@color/colorAccent"
-        app:inactive_centre_button_icon_color="@color/white"
+        app:centre_button_color="@color/centre_button_color"
         app:centre_button_icon="@drawable/ic_edit_black_24dp"
         app:layout_behavior="com.luseen.spacenavigation.SpaceNavigationViewBehavior"
         app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
-        app:space_item_icon_size="35dp"
-        app:inactive_item_color="@color/gray_very_light"/>
+        app:space_item_icon_size="@dimen/space_item_icon_default_size"
+        app:space_item_text_size="@dimen/space_item_text_default_size" />
 
 
 </android.support.design.widget.CoordinatorLayout>

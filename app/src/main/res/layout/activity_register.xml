@@ -8,19 +8,17 @@
     android:background="@android:color/white"
     android:fillViewport="true"
     android:fitsSystemWindows="true"
-    tools:context="com.project.android.hobbyist.Activities.RegisterActivity">
+    tools:context="com.project.android.hobbyist.RegisterActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/profile_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
             android:layout_centerHorizontal="true"
-            android:scaleType="centerCrop"
             android:layout_marginTop="30dp"
             android:src="@drawable/ic_account_circle_24px"
             app:civ_border_color="#FF000000"
@@ -30,19 +28,18 @@
         <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
             android:id="@+id/text_field_1"
             android:layout_width="match_parent"
-
-            app:iconSignifier="@drawable/ic_person_black_24dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/profile_image"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
+            app:endIcon="@drawable/ic_person_black_24dp"
             app:helperText="@string/required"
             app:isResponsiveIconColor="true"
             app:labelText="@string/full_name"
             app:panelBackgroundColor="@color/colorPer200White"
-            app:primaryColor="@color/colorPrimary"
-            app:secondaryColor="@color/gray_light"
+            app:primaryColor="@color/colorBlue"
+            app:secondaryColor="@color/colorPrimary"
             app:useDenseSpacing="true">
 
             <studio.carbonylgroup.textfieldboxes.ExtendedEditText
@@ -61,20 +58,21 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
+            app:endIcon="@drawable/ic_email_black_24dp"
             app:helperText="@string/required"
             app:isResponsiveIconColor="true"
-            app:iconSignifier="@drawable/ic_email_black_24dp"
             app:labelText="@string/email"
             app:panelBackgroundColor="@color/colorPer200White"
-            app:primaryColor="@color/colorPrimary"
-            app:secondaryColor="@color/gray_light"
+            app:primaryColor="@color/colorBlue"
+            app:secondaryColor="@color/colorPrimary"
             app:useDenseSpacing="true">
 
             <studio.carbonylgroup.textfieldboxes.ExtendedEditText
                 android:id="@+id/email_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="text" />
+                android:inputType="text"
+                app:prefix="\@gmail.com" />
 
         </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
@@ -86,12 +84,12 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
+            app:endIcon="@drawable/ic_phone_black_24dp"
             app:isResponsiveIconColor="true"
-            app:iconSignifier="@drawable/ic_phone_black_24dp"
             app:labelText="@string/phone_number"
             app:panelBackgroundColor="@color/colorPer200White"
-            app:primaryColor="@color/colorPrimary"
-            app:secondaryColor="@color/gray_light"
+            app:primaryColor="@color/colorBlue"
+            app:secondaryColor="@color/colorPrimary"
             app:useDenseSpacing="true">
 
             <studio.carbonylgroup.textfieldboxes.ExtendedEditText
@@ -113,18 +111,17 @@
             app:endIcon="@drawable/ic_lock_black_24dp"
             app:helperText="@string/required"
             app:isResponsiveIconColor="true"
-            app:iconSignifier="@drawable/ic_lock_black_24dp"
             app:labelText="@string/password"
             app:panelBackgroundColor="@color/colorPer200White"
-            app:primaryColor="@color/colorPrimary"
-            app:secondaryColor="@color/gray_light"
+            app:primaryColor="@color/colorBlue"
+            app:secondaryColor="@color/colorPrimary"
             app:useDenseSpacing="true">
 
             <studio.carbonylgroup.textfieldboxes.ExtendedEditText
                 android:id="@+id/password_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword" />
+                android:inputType="textPhonetic" />
 
         </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
@@ -136,20 +133,20 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
+            app:endIcon="@drawable/ic_lock_black_24dp"
             app:helperText="@string/required"
-            app:iconSignifier="@drawable/ic_lock_black_24dp"
             app:isResponsiveIconColor="true"
             app:labelText="@string/repeat_password"
             app:panelBackgroundColor="@color/colorPer200White"
-            app:primaryColor="@color/colorPrimary"
-            app:secondaryColor="@color/gray_light"
+            app:primaryColor="@color/colorBlue"
+            app:secondaryColor="@color/colorPrimary"
             app:useDenseSpacing="true">
 
             <studio.carbonylgroup.textfieldboxes.ExtendedEditText
                 android:id="@+id/repeat_password_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="textWebPassword" />
+                android:inputType="textPhonetic" />
 
         </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
@@ -249,12 +246,50 @@
             custom:textToggleRight="Other"
             custom:toggleWidth="104dp" />
 
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender_toggle_switch"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_location_on_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity=""
+            android:hint="@string/country" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/country_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/country"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            app:ccpDialog_allowSearch="true"
+            app:ccpDialog_fastScroller_bubbleColor="@color/colorBlue"
+            app:ccpDialog_showCloseIcon="true"
+            app:ccpDialog_showFastScroller="true"
+            app:ccp_arrowSize="20dp"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_autoDetectLanguage="true"
+            app:ccp_clickable="true"
+            app:ccp_contentColor="@android:color/black"
+            app:ccp_showArrow="true"
+            app:ccp_showFullName="true"
+            app:ccp_showNameCode="false"
+            app:ccp_showPhoneCode="false"
+            app:ccp_textGravity="LEFT"
+            app:ccp_textSize="20sp" />
 
         <TextView
             android:id="@+id/hobby"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/gender_toggle_switch"
+            android:layout_below="@id/country_spinner"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
